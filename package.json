@@ -2,11 +2,14 @@
   "name": "playport",
   "version": "1.0.0",
   "private": true,
+  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
-  },
+    "start": "next start",
+    "deploy": "opennextjs-cloudflare deploy"
+  
+},
   "dependencies": {
     "@supabase/supabase-js": "2.45.4",
     "next": "14.2.5",
