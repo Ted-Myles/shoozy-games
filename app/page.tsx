@@ -102,11 +102,7 @@ export default function Home() {
               </div>
             )}
 
-            <footer className="footer">
-              <strong style={{ color: '#a78bfa' }}>{GAMES.length}</strong> games ·{' '}
-              <strong style={{ color: '#a78bfa' }}>{totalPlayers.toLocaleString()}</strong>{' '}
-              players · Built with Next.js &amp; Supabase
-            </footer>
+            
           </main>
         </div>
       </div>
