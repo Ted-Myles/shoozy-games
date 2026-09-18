@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -16,10 +17,23 @@ export const viewport: Viewport = {
   themeColor: '#0f0720',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6890578781595999"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+
+        {children}
+      </body>
     </html>
   );
 }
